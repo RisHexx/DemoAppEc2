@@ -11,3 +11,10 @@ sudo systemctl start codedeploy-agent
 sudo systemctl status codedeploy-agent
 sudo tail -f /var/log/aws/codedeploy-agent/codedeploy-agent.log
 ```
+
+```bash
+sudo nano /etc/nginx/sites-available/default
+# root /var/www/my-app;
+sudo systemctl reload nginx
+#nginxLogs sudo tail -f /var/log/nginx/access.log
+```
